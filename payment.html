@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoe Shop - Checkout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #ffffff;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 8px;
+            width: 400px;
+            max-width: 100%;
+        }
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .product {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .product img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product h3 {
+            font-size: 24px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .product p {
+            font-size: 16px;
+            color: #777;
+            margin: 5px 0;
+        }
+        .product .price {
+            font-size: 22px;
+            font-weight: 600;
+            color: #28a745;
+        }
+        .payment-form {
+            margin-top: 20px;
+            text-align: center;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 16px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Checkout - Shoe Shop</h1>
+
+        <div class="product">
+            <img src="images.jfif" alt="Shoe">
+            <h3>Stylish Running Shoes</h3>
+            <p>Comfortable and stylish running shoes for all types of workouts.</p>
+            <p class="price">$79.99</p>
+        </div>
+
+        
+        <div class="payment-form">
+            <button onclick="window.location.href='https://www.paypal.com/ncp/payment/ZYWDVDZJZFEZE'">Pay with PayPal</button>
+        </div>
+    </div>
+    <script 
+  src="https://www.paypal.com/sdk/js?client-id=BAAqPWIGxexFDnFyRieKCFdqiaKC1b8nj6ZykdXDSJUVRvAdlSZ9IWe_KIGt_ya9w3i5HXFetKqZUvf7fA&components=hosted-buttons&disable-funding=venmo&currency=PHP">
+</script>
+<div id="paypal-container-ZYWDVDZJZFEZE"></div>
+
+</body>
+</html>
